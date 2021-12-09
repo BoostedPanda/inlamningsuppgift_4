@@ -1,5 +1,15 @@
 # Skolansökningar - Inlämningsuppgift 4
 
+## Guide
+- Sökrutan tar emot **Förnamn**, **Efternamn**, **Hobbys** och **Linje**
+- För att ***filtrera*** klicka på valfri **radio button**.
+- För att ***sortera*** klicka på **First Name**, **Last Name** eller **Age**.
+- För att ***välja elev*** klicka på någon elevs **cell**, Då kommer det upp en ruta med info om eleven!
+- För att se ***kompatibla skolor*** klicka på **Show Schools** efter du har valt en elev.
+
+
+## Info
+
 Din uppgift är att hantera elever som söker till eftergymnasiala utbildningar och matcha dem med rätt skolor. Ta fram en applikation som underlättar arbetet.
 
 Data för [elever](https://api.mocki.io/v2/01047e91/students)

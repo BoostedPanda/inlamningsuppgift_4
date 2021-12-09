@@ -75,8 +75,8 @@
     background: rgba(29, 161, 142, .1);
     color: black;
     border: none;
-    top: -10px;
-    right: -10px;
+    top: 5px;
+    right: 5px;
     cursor: pointer;
     border-radius: 25px;
     width: 2em;
@@ -132,6 +132,7 @@
 ul {
     padding: 0 15px;
     cursor: pointer;
+    font-weight: 700;
 }
 ul:hover{
     color: rgb(153, 153, 153);
