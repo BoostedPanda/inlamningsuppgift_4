@@ -20,6 +20,7 @@
     border-bottom: 1px solid #dddddd;
 }
 
+
 #myTable tbody tr:nth-last-of-type(even) {
     background: #d6d6d6;
 }
@@ -27,7 +28,10 @@
 #myTable tbody tr:last-of-type {
     border-bottom: 2px solid #b4b4b4;
 }
-
+#myTable tbody tr:hover {
+    cursor: pointer;
+    background: #b4b4b4;
+}
 #firstName,
 #lastName,
 #age {
@@ -123,4 +127,12 @@
 
 #showSchools:hover{
     background: rgb(153, 209, 228);
+}
+
+ul {
+    padding: 0 15px;
+    cursor: pointer;
+}
+ul:hover{
+    color: rgb(153, 153, 153);
 }

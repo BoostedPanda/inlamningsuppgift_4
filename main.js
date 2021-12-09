@@ -56,12 +56,7 @@ const createStudentcard = (user) => {
     programme.textContent = user.programme
     studentCard.appendChild(programme)
 
-    const chooseStudentBtn = document.createElement("button")
-    chooseStudentBtn.setAttribute("class", "chooseStudent")
-    chooseStudentBtn.textContent = "Choose Student"
-    studentCard.appendChild(chooseStudentBtn)
-
-    chooseStudentBtn.addEventListener("click", async () => {
+    studentCard.addEventListener("click", async () => {
         parent.innerHTML = ""
         let schoolsData = await getData("https://api.mocki.io/v2/01047e91/schools")
 
@@ -97,15 +92,11 @@ const createStudentcard = (user) => {
         studentProfileCard.appendChild(programme)
 
         const schoolName = document.createElement("ul")
-        schoolName.textContent = `School: `
+        schoolName.textContent = `Show Schools`
         studentProfileCard.appendChild(schoolName)
 
-        const showSchools = document.createElement("button")
-        showSchools.setAttribute("id", "showSchools")
-        showSchools.textContent = "Show Schools"
-        studentProfileCard.appendChild(showSchools)
-
-        showSchools.addEventListener("click", () => {
+        schoolName.addEventListener("click", () => {
+            schoolName.innerHTML = "Schools: "
             schoolsData.forEach((school) => {
                 const schools = document.createElement("li")
                 schools.textContent = school.name
@@ -134,7 +125,7 @@ const createStudentcard = (user) => {
             sorted.forEach((element) => {
                 schoolName.appendChild(element)
             })
-            showSchools.remove()
+
         })
 
         const closeBtn = document.createElement("button")
@@ -192,13 +183,15 @@ netRadioBtn.addEventListener("click", () => {
 const getSearchedStudents = async (name) => {
     tableBody.innerHTML = ""
     name = searchInput.value.charAt(0).toUpperCase() + searchInput.value.slice(1).toLowerCase();
+    const hobbieInput = searchInput.value.charAt(0).toLowerCase() + searchInput.value.slice(1).toLowerCase();
+    const netSearch = searchInput.value.charAt(0).toUpperCase() + searchInput.value.slice(1).toUpperCase();
 
     let students = await getData("https://api.mocki.io/v2/01047e91/students")
 
     students.forEach((user) => {
-        if (user.firstName === name || user.lastName === name) {
+        if (user.firstName === name || user.lastName === name || user.programme == name || user.programme == netSearch || containsAll(user.hobbies, [hobbieInput])) {
             createStudentcard(user)
-        } else {}
+        }
 
     })
 }
