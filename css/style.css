@@ -1,0 +1,126 @@
+#myTable {
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 20px;
+}
+
+#myTable thead tr {
+    background-color: #b4b4b4;
+    text-align: left;
+}
+
+#myTable th,
+#myTable td {
+    padding: 12px 15px;
+}
+
+#myTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#myTable tbody tr:nth-last-of-type(even) {
+    background: #d6d6d6;
+}
+
+#myTable tbody tr:last-of-type {
+    border-bottom: 2px solid #b4b4b4;
+}
+
+#firstName,
+#lastName,
+#age {
+    cursor: pointer;
+}
+
+#firstName:hover,
+#lastName:hover,
+#age:hover {
+    color: rgb(63, 63, 63)
+}
+
+#firstNameT {
+    cursor: pointer;
+}
+
+#parent {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#studentProfileCard {
+    border-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    box-shadow: black 4px 3px 20px;
+    width: 25vw;
+
+    padding: 10px;
+    /* position: relative; */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: 50%;
+}
+
+.closeBtn {
+    position: absolute;
+    float: right;
+    background: rgba(29, 161, 142, .1);
+    color: black;
+    border: none;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 2em;
+    height: 2em;
+    font-weight: 600;
+}
+
+.closeBtn:hover {
+    background: rgba(37, 212, 186, 0.1)
+}
+
+.chooseStudent {
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    margin: 10px 0;
+    background: lightblue;
+}
+
+.chooseStudent:hover {
+    background: rgb(153, 209, 228);
+}
+
+#search{
+    border: none;
+    border-radius: 25px;
+    background: #e0e0e0;
+    height: 20px;
+    padding: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.226) 0 0 5px;
+}
+#search:focus{
+    outline: none;
+    background: #dbdbdb;
+}
+
+#showSchools{
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    margin: 10px 0;
+    background: lightblue;
+}
+
+#showSchools:hover{
+    background: rgb(153, 209, 228);
+}

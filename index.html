@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlamningsuppgift 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<h1>Inlämningsuppgift 4</h1>
+<div>
+    <input type="text" name="search" id="search" placeholder="Enter student name">
+    <button id="searchBtn">Search</button>
+</div>
+<div>
+    <input type="radio" name="programme" id="all" value="all" checked>
+    <label for="all">All</label>
+    <input type="radio" name="programme" id="Backend" value="Backend">
+    <label for="Backend">Backend</label>
+    <input type="radio" name="programme" id="Frontend" value="Frontend">
+    <label for="Frontend">Frontend</label>
+    <input type="radio" name="programme" id="NET" value=".NET">
+    <label for="NET">.NET</label>
+
+</div>
+
+<table id="myTable">
+    <thead>
+        <tr>
+            <th id="firstName" onclick="sortTable(0)">First Name</th>
+            <th id="lastName" onclick="sortTable(1)">Last Name</th>
+            <th id="age" onclick="sortTable(2)">Age</th>
+            <th>Hobbies</th>
+            <th>Programme</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+</table>
+<script src="main.js"></script>
+</body>
+
+</html>
