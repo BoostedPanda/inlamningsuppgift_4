@@ -1,4 +1,4 @@
-# Skolansökningar - Inlämningsuppgift - 4
+# Skolansökningar - Inlämningsuppgift 4
 
 Din uppgift är att hantera elever som söker till eftergymnasiala utbildningar och matcha dem med rätt skolor. Ta fram en applikation som underlättar arbetet.
 
